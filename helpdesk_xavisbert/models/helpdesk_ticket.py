@@ -7,7 +7,7 @@ class HelpdeskTicket(models.Model):
     _description = 'Ticket'
 
     name = fields.Char(string='Nombre')
-    description = fields.Text(string='Descripción')
+    description = fields.Text(string='Descripción', transalte=True)
     date = fields.Date(string="Fecha")
     state = fields.Selection(
         [('nuevo', 'Nuevo'),
